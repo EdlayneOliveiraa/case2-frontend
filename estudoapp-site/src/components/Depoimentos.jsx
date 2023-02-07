@@ -7,7 +7,7 @@ function Depoimentos() {
         <h2 className='mt-3'>Depoimentos</h2>
         <Row className='mt-3'>
             <Col sm="12" md="2" className='text-center'>
-                <img src="holder.js/100x100?bg=ffd000" alt="Foto do depoimento" className='rounded' />
+                <img src="https://via.placeholder.com/100/ffd000" alt="Foto do depoimento" className='rounded' />
             </Col>
             <Col sm="12" md="10">
                 <strong>Depoimento 1</strong>
@@ -19,7 +19,7 @@ function Depoimentos() {
         </Row>
         <Row className='mt-3'>
             <Col sm="12" md="2" className='text-center'>
-                <img src="holder.js/100x100?bg=ffd000" alt="Foto do depoimento 2" className='rounded' />
+                <img src="https://via.placeholder.com/100/ffd000" alt="Foto do depoimento 2" className='rounded' />
             </Col>
             <Col sm="12" md="10">
                 <strong>Depoimento 2</strong>

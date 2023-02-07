@@ -30,4 +30,22 @@ npm create vite@latest estudoapp-site --template react
 cd estudoapp-site
 npm install react-bootstrap bootstrap
 npm install react-router-dom
+npm install react-router-bootstrap
+```
+
+### 3. Ajustar os arquivos
+
+- `index.html` - Adicionar o link para o CSS do Bootstrap
+- `App.js` - Adicionar o `Router` e as rotas
+- `App.css` - Remover o CSS padrão do Vite
+- `index.css` - Adicionar o CSS do Bootstrap
+- `components/` - Criar os componentes
+- `pages/` - Criar as páginas
+- `pages/admin/` - Criar as páginas do admin
+- `api/` - Criar o arquivo que contém as rotas da API
+
+### 4. Executar o projeto
+
+```bash
+npm run dev
 ```

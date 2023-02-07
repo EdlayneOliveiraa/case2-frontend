@@ -1,6 +1,4 @@
-import Container from 'react-bootstrap/esm/Container'
-import Button from 'react-bootstrap/Button'
-import Form from 'react-bootstrap/Form'
+import {Container, Button, Form} from 'react-bootstrap'
 import Depoimentos from '../components/Depoimentos'
 
 function Contato() {

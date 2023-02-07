@@ -1,5 +1,5 @@
 const CmsApi = () => {
-    const url = 'http://localhost:3000/api/v1'
+    const url = 'http://localhost:3000'
 
     return {
         login (email, password) {
@@ -15,7 +15,7 @@ const CmsApi = () => {
             })
         },
         getFuncionalidades () {
-            return fetch(`${url}/funcionalidades`)
+            return fetch(`${url}/product`)
         },
         getSobre () {
             return fetch(`${url}/sobre`)
@@ -25,37 +25,37 @@ const CmsApi = () => {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
-                    'token': localStorage.getItem('token')
+                    'x-auth-token': localStorage.getItem('token')
                 },
                 body: JSON.stringify(sobre)
             })
         },
         postFuncionalidade (funcionalidade) {
-            return fetch(`${url}/funcionalidades`, {
+            return fetch(`${url}/product`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'token': localStorage.getItem('token')
+                    'x-auth-token': localStorage.getItem('token')
                 },
                 body: JSON.stringify(funcionalidade)
             })
         },
         patchFuncionalidade (funcionalidade) {
-            return fetch(`${url}/funcionalidades/${funcionalidade.id}`, {
+            return fetch(`${url}/product/${funcionalidade.id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
-                    'token': localStorage.getItem('token')
+                    'x-auth-token': localStorage.getItem('token')
                 },
                 body: JSON.stringify(funcionalidade)
             })
         },
         deleteFuncionalidade (id) {
-            return fetch(`${url}/funcionalidades/${id}`, {
+            return fetch(`${url}/product/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
-                    'token': localStorage.getItem('token')
+                    'x-auth-token': localStorage.getItem('token')
                 }
             })
         }

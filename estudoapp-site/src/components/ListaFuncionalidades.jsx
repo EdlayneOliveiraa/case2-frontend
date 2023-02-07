@@ -5,13 +5,13 @@ import Card from 'react-bootstrap/Card';
 function ItemFuncionalidade(item) {
     return (
         <Col sm="12" md="4" key={item.id}>
-            <Card>
+            <Card className='m-3'>
                 <Card.Body>
                     <Card.Title>
-                        <strong>{item.titulo}</strong>
+                        <strong>{item.title}</strong>
                     </Card.Title>
                     <Card.Text>
-                        {item.descricao}
+                        {item.description}
                     </Card.Text>
                 </Card.Body>
             </Card>

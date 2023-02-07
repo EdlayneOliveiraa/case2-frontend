@@ -5,18 +5,21 @@ import CmsApi from '../api/CmsApi'
 
 function Login() {
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault()
         const form = event.currentTarget
         const email = form.elements.Email.value
         const senha = form.elements.Senha.value
 
-        CmsApi().login(email, senha)
-            .then(response => response.json())
-            .then(data => {
-                localStorage.setItem('token', data.token)
-                window.location.href = '/admin/funcionalidades'
-            })
+        const retorno = await CmsApi().login(email, senha)
+        if(!retorno.ok){
+            alert('Não foi possível realizar o login')
+            return
+        }
+
+        const dados = await retorno.json()
+        localStorage.setItem('token', dados.token)
+        window.location.href = '/admin/funcionalidades'
     }
 
     return (

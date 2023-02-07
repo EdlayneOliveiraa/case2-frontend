@@ -6,7 +6,7 @@ function Banners() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="holder.js/1200x400?text=Slide incrível&bg=ffd000"
+                        src="https://via.placeholder.com/1500x300/ffd000"
                         alt="Slide incrível"
                     />
                     <Carousel.Caption>
@@ -17,7 +17,7 @@ function Banners() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="holder.js/1200x400?text=Outro slide incrível&bg=ffd000"
+                        src="https://via.placeholder.com/1500x300/ffd000"
                         alt="Outro slide incrível"
                     />
                     <Carousel.Caption>
@@ -28,7 +28,7 @@ function Banners() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="holder.js/1200x400?text=Último slide&bg=ffd000"
+                        src="https://via.placeholder.com/1500x300/ffd000"
                         alt="Último slide"
                     />
                     <Carousel.Caption>

@@ -1,20 +1,25 @@
 import ListaFuncionalidades from "../components/ListaFuncionalidades"
 import Container from 'react-bootstrap/Container'
 import Banners from "../components/Banners"
+import { useEffect, useState } from "react"
+import CmsApi from '../api/CmsApi'
 
 function Funcionalidades() {
-    const funcionalidades = [
-        {
-            id: 1,
-            titulo: "Título 1",
-            descricao: "Descrição 1",
-        },
-        {
-            id: 2,
-            titulo: "Título 2",
-            descricao: "Descrição 2",
-        },
-    ]
+    const [funcionalidades, setFuncionalidades] = useState([])
+
+    useEffect(() => {
+        async function fetchFuncionalidades() {
+            const response = await CmsApi().getFuncionalidades()
+            if(!response.ok) {
+                alert('Erro ao carregar funcionalidades')
+                return
+            }
+            const funcionalidades = await response.json()
+            setFuncionalidades(funcionalidades.data)
+        }
+
+        fetchFuncionalidades()
+    }, [])
 
     return (
         <>
