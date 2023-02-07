@@ -15,10 +15,10 @@ const CmsApi = () => {
             })
         },
         getSobre () {
-            return fetch(`${url}/page/1`)
+            return fetch(`${url}/paginas/1`)
         },
         patchSobre (sobre) {
-            return fetch(`${url}/page/1`, {
+            return fetch(`${url}/paginas/1`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -28,10 +28,10 @@ const CmsApi = () => {
             })
         },        
         getFuncionalidades () {
-            return fetch(`${url}/product`)
+            return fetch(`${url}/produtos`)
         },
         postFuncionalidade (funcionalidade) {
-            return fetch(`${url}/product`, {
+            return fetch(`${url}/produtos`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ const CmsApi = () => {
             })
         },
         patchFuncionalidade (funcionalidade) {
-            return fetch(`${url}/product/${funcionalidade.id}`, {
+            return fetch(`${url}/produtos/${funcionalidade.id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ const CmsApi = () => {
             })
         },
         deleteFuncionalidade (id) {
-            return fetch(`${url}/product/${id}`, {
+            return fetch(`${url}/produtos/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
