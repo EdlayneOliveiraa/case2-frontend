@@ -6,6 +6,7 @@ import Contato from '../pages/Contato'
 import Funcionalidades from '../pages/Funcionalidades'
 import Login from '../pages/Login'
 import AdminFuncionalidades from '../pages/Admin/AdminFuncionalidades'
+import AdminSobre from '../pages/Admin/AdminSobre'
 
 function Rotas() {
     return (
@@ -16,6 +17,7 @@ function Rotas() {
             <Route path="/funcionalidades" element={<Funcionalidades />} />
             <Route path="/login" element={<Login />} />
             <Route path="/admin/funcionalidades" element={<AdminFuncionalidades />} />
+            <Route path="/admin/sobre" element={<AdminSobre />} />
         </Routes>
     )
 }

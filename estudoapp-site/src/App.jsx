@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/css/main.css'
 
 import Menu from './components/Menu'

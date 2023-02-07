@@ -14,14 +14,11 @@ const CmsApi = () => {
                 })
             })
         },
-        getFuncionalidades () {
-            return fetch(`${url}/product`)
-        },
         getSobre () {
-            return fetch(`${url}/sobre`)
+            return fetch(`${url}/page/1`)
         },
         patchSobre (sobre) {
-            return fetch(`${url}/sobre`, {
+            return fetch(`${url}/page/1`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -29,6 +26,9 @@ const CmsApi = () => {
                 },
                 body: JSON.stringify(sobre)
             })
+        },        
+        getFuncionalidades () {
+            return fetch(`${url}/product`)
         },
         postFuncionalidade (funcionalidade) {
             return fetch(`${url}/product`, {
