@@ -1,5 +1,6 @@
 # case2-frontend
-Case 2 - Site do EstudoApp (Frontend) 
+
+Case 2 - Site do EstudoApp (Frontend)
 
 ## Sobre o projeto
 
@@ -11,6 +12,7 @@ O projeto foi desenvolvido com o intuito de criar um site para o EstudoApp, uma 
 - [NPM](https://www.npmjs.com/)
 
 ## Como executar?
+
 ```bash
 npm install
 npm run dev
